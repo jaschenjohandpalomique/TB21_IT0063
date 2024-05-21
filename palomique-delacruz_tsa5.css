@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 80vw;
+  margin: 20px auto;
+  border: 7px solid #ccc;
+  max-width: 1600px;
+  gap: 50px;
+}
+
+.card-poke {
+  background-color: rgb(255, 136, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 250px;
+  height: 65vh;
+  position: relative;
+}
+
+.card {
+  background-image: url('https://thumbs.dreamstime.com/b/comic-background-pop-art-lightning-blast-halftone-dots-cartoon-vector-illustration-red-100416591.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 110%;
+  height: 110%;
+}
+
+.image {
+  max-width: 70%;
+  height: auto;
+  margin-top: rem; 
+}
+.name {
+  margin-bottom: 0px; 
+}
+.type {
+  color:chocolate;
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+
+.card-button {
+  background-color: #ff0000; /* Specify your desired color */
+  color: #ffffff; /* Text color */
+  border: none;
+  padding: 7px 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+}
+
+
+.electric{
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.ghost{
+  background-color: gray;
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.poison{
+  background-color: rgb(221, 21, 178);
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.normal{
+  background-color: rgba(240, 243, 240, 0.644);
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.fire{
+  background-color: rgb(255, 38, 0);
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.fighting{
+  background-color: rgb(231, 14, 14);
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.grass{
+  background-color: rgb(22, 231, 14);
+  border-radius: 10px;
+  padding: 7px 20px; 
+}
+
+.ground{
+    background-color: rgb(231, 173, 14);
+    border-radius: 10px;
+    padding: 7px 20px; 
+}
