@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(https://th.bing.com/th/id/R.f8335abfc56c2a665ca700c0c24a68a5?rik=cPw9XfRViBl%2fAw&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258769okdi.png&ehk=ZObEl6aULt73fNjpSv9FEjjS9WX41vbj%2bjLpq6ENqIs%3d&risl=&pid=ImgRaw&r=0);
+    gap: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px; 
+}
+    .POKEBALL {
+        display: none;
+    }
+
+
+.pokemon {
+    flex: 0 0 calc(25% - 20px); 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.pokeball {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('https://th.bing.com/th/id/R.f8335abfc56c2a665ca700c0c24a68a5?rik=cPw9XfRViBl%2fAw&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258769okdi.png&ehk=ZObEl6aULt73fNjpSv9FEjjS9WX41vbj%2bjLpq6ENqIs%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain;
+}
+@media (max-width: 480px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        max-width: 1100px; 
+        height: 100px;
+        justify-content: center;
+        border: 2px solid black; 
+        align-items: center;
+    }
+
+    .POKEBALL{
+        display: inline-block;
+        width: 20x;
+        height: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {  
+    .pokemon {
+        flex-basis: calc(33.33% - 20px); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pokemon {
+        flex-basis: calc(50% - 20px); 
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pokemon {
+        flex-basis: calc(100% - 20px); 
+        text-align: center;
+
+       .POKEBALL {
+            display: none;
+        }
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.pokemon:hover {
+    background-color: white;
+}
+
+.pokemon:hover .pokeball {
+    filter: invert(50%);
+}
+
+
+.bellsprout { background-color: greenyellow; }
+.pikachu { background-color: yellow; }
+.caterpie { background-color: green; }
+.meow { background-color: salmon; }
+.abra { background-color:  orangered; }
+.bulbasaur { background-color: yellowgreen; }
+.charmander { background-color: orange; }
+.dratini { background-color: blue; }
+.jigglypuff { background-color: red; }
+.mankey { background-color: orangered; }
+.meowth { background-color: gray; }
+.eevee { background-color: brown; }
