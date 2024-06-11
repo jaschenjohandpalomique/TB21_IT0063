@@ -1,0 +1,289 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav{
+    background-color:rgb(134, 244, 248) ;
+    background-image: url(https://media4.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif?cid=ecf05e47zzxvpe6jpbsmkzivf2cv8oxfkm6xi9wyhfbjgywg&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+    background-size: cover;
+    color: white;
+    padding: 10px; 
+    display: flex;
+    height:fit-content;
+    margin-bottom: 10px;
+
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.menu-list{
+    display: flex;
+
+}
+
+.menu-li{
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+.menu-li > a{
+    font-size:1.2rem;
+    text-decoration: none;
+    color:white;
+    font-family:'Times New Roman', Times, serif ;
+    transform: 0.5s all ease;
+}
+
+.menu-li > a:hover{
+    color:rgb(228, 129, 71) ;
+    text-decoration: underline ;
+    text-underline-offset: 7px;
+}
+
+main .container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 35% auto;
+    height: 650px;
+    grid-gap: 10px;
+}
+
+.main-image{
+    grid-column:1/3;
+    grid-row:1/2;
+    box-shadow: 5px 5px 3px gray;
+    border: 2px solid rgb(86, 187, 194);
+}
+
+.main-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.sub-image{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 3px gray;
+}
+
+.sub-img{
+    width:100%;
+    height: 110%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.coming{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(86, 187, 194);
+    box-shadow: 5px 5px 3px gray;
+    color: rgb(15, 27, 133);
+}
+}
+
+.article-tile{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.article-content{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.article{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+<!-- HTML !-->
+<button class="button-27" role="button">Button 27</button>
+
+/* CSS */
+.button-27 {
+  appearance::backdrop;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgb(23, 245, 253) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: rgb(41, 188, 247);
+}
+
+.button-27:active {
+  box-shadow: yellow;
+  transform: translateY(0);
+}
+
+.news{
+    background-image: url(https://media4.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif?cid=ecf05e47zzxvpe6jpbsmkzivf2cv8oxfkm6xi9wyhfbjgywg&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-between;
+    box-shadow: 5px 5px 3px gray;
+    
+}
+
+.news-header{
+    color:rgb(255, 255, 255) ;
+    font-size: 2rem;
+}
+
+.news-h2{
+    font-size: 1.5rem;
+}
+
+.news-p{
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height:1.5;
+}
+
+.news-article{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; 
+    box-shadow: 5px 5px 3px gray;
+    padding: 10px;
+    border: 2px solid rgb(86, 187, 194);
+    
+
+}
+
+.student-id {
+    width: 80px; 
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+    
+}
+
+.char-desc{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.char-name{
+    font-size: 1.4rem;
+}
+
+.char-role{
+    font-size: 1rem;
+}
+
+.char-quote{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+@media only screen and (max-width: 800px) {
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    main .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .news {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .coming {
+        grid-column: 1/2;
+    }
+
+    .students {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .student-id {
+        width: 80px; 
+    }
+}
