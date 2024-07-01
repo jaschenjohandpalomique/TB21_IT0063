@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+h1 {
+  text-align: center;
+  color: #0099ff;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  flex: 1;
+  margin: 0 10px;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #01ff4d;
+  border-radius: 4px;
+  background-color: #fc5959;
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  padding: 100px;
+  align-items: center;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.flex-item {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  flex: 1 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.flex-item:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
