@@ -1,45 +1,48 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const flexDirectionSelect = document.getElementById("flex-direction");
-    const justifyContentSelect = document.getElementById("justify-content");
-    const alignItemsSelect = document.getElementById("align-items");
-    const flexWrapSelect = document.getElementById("flex-wrap");
-    const flexContainer = document.getElementById("flex-container");
-    const resetButton = document.getElementById("reset-button");
-  
- 
-    function updateFlexbox() {
-      flexContainer.style.flexDirection = flexDirectionSelect.value;
-      flexContainer.style.justifyContent = justifyContentSelect.value;
-      flexContainer.style.alignItems = alignItemsSelect.value;
-      flexContainer.style.flexWrap = flexWrapSelect.value;
-    }
-  
+document.addEventListener('DOMContentLoaded', function() {
+    const flexDirectionSelect = document.getElementById('flexDirection');
+    const justifyContentSelect = document.getElementById('justifyContent');
+    const alignItemsSelect = document.getElementById('alignItems');
+    const flexContainer = document.getElementById('flexContainer');
+    const resetButton = document.getElementById('resetFlex');
+    const growAllButton = document.getElementById('growAll');
+    const flexGrowInputs = document.querySelectorAll('.additional-controls input[type="number"]');
 
-    flexDirectionSelect.addEventListener("change", updateFlexbox);
-    justifyContentSelect.addEventListener("change", updateFlexbox);
-    alignItemsSelect.addEventListener("change", updateFlexbox);
-    flexWrapSelect.addEventListener("change", updateFlexbox);
-  
-  
-    resetButton.addEventListener("click", function() {
-      
-      flexDirectionSelect.value = "row";
-      justifyContentSelect.value = "flex-start";
-      alignItemsSelect.value = "flex-start";
-      flexWrapSelect.value = "nowrap";
-  
- 
-      flexContainer.style.flexDirection = "row";
-      flexContainer.style.justifyContent = "flex-start";
-      flexContainer.style.alignItems = "flex-start";
-      flexContainer.style.flexWrap = "nowrap";
+    flexDirectionSelect.addEventListener('change', updateFlexProperties);
+    justifyContentSelect.addEventListener('change', updateFlexProperties);
+    alignItemsSelect.addEventListener('change', updateFlexProperties);
+
+    function updateFlexProperties() {
+        const flexDirectionValue = flexDirectionSelect.value;
+        const justifyContentValue = justifyContentSelect.value;
+        const alignItemsValue = alignItemsSelect.value;
+
+        flexContainer.style.flexDirection = flexDirectionValue;
+        flexContainer.style.justifyContent = justifyContentValue;
+        flexContainer.style.alignItems = alignItemsValue;
+    }
+
+    resetButton.addEventListener('click', function() {
+        flexDirectionSelect.value = 'row';
+        justifyContentSelect.value = 'flex-start';
+        alignItemsSelect.value = 'stretch';
+        updateFlexProperties();
+
+        flexGrowInputs.forEach(input => {
+            input.value = '0';
+        });
+
+        document.getElementById('item-1').style.flexGrow = '0';
+        document.getElementById('item-2').style.flexGrow = '0';
+        document.getElementById('item-3').style.flexGrow = '0';
     });
-  
-   
-    flexContainer.addEventListener("click", function(e) {
-      if (e.target.classList.contains("flex-item")) {
-        e.target.style.backgroundColor = e.target.style.backgroundColor === "#3498db" ? "#e74c3c" : "#3498db";
-      }
+
+    growAllButton.addEventListener('click', function() {
+        const flexGrow1 = document.getElementById('flex-grow-1').value;
+        const flexGrow2 = document.getElementById('flex-grow-2').value;
+        const flexGrow3 = document.getElementById('flex-grow-3').value;
+
+        document.getElementById('item-1').style.flexGrow = flexGrow1;
+        document.getElementById('item-2').style.flexGrow = flexGrow2;
+        document.getElementById('item-3').style.flexGrow = flexGrow3;
     });
-  });
-  
+});
