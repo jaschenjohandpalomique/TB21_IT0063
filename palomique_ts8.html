@@ -3,41 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>technical 8-Palomique</title>
-    <link rel="stylesheet" href="technical 8.css">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="palomique_tsa8.css">
 </head>
-<body>
+<body style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.V5xf5DY-TCGA4Mbsru2W4wHaFj&pid=Api&P=0&h=180');">
     <div class="container">
-        <h1>Reset Flexbox</h1>
-        
-        
-        <div class="controls">
-            <label for="flexDirection">Flex Direction:</label>
-            <select id="flexDirection">
-                <option value="row">Row</option>
-                <option value="row-reverse">Row Reverse</option>
-                <option value="column">Column</option>
-                <option value="column-reverse">Column Reverse</option>
-            </select>
-            <label for="justifyContent">Justify Content:</label>
-            <select id="justifyContent">
-                <option value="flex-start">Flex Start</option>
-                <option value="flex-end">Flex End</option>
-                <option value="center">Center</option>
-                <option value="space-between">Space Between</option>
-                <option value="space-around">Space Around</option>
-                <option value="space-evenly">Space Evenly</option>
-            </select>
+        <h1><b>Flexbox</b> </h1>
 
-            <label for="Flex Grow">Align Items:</label>
-            <select id="alignItems"> 
-                <option value="flex-start">Flex Start</option>
-                <option value="flex-end">Flex End</option>
-                <option value="center">Center</option>
-            </select>
-        
-            <label for="Flex Grow">Flex Grow:</label>
-                <button value="Reset">Reset</option>
-                <button value="Reset">GrowAll</option>
-        
-            </select>
+        <div class="controls">
+            <button id="resetFlex" class="reset-button">Reset Flexbox</button>
+            <button id="gapButton" class="reset-button">Gap</button>
+            <button id="zeroButton" class="reset-button">Set All to 0</button>
+        </div>
+
+        <div class="settings">
+            <div class="select-control">
+                <label for="flexDirection"><b>Flex Direction:</b></label>
+                <select id="flexDirection">
+                    <option value="row">Row</option>
+                    <option value="row-reverse">Row Reverse</option>
+                    <option value="column">Column</option>
+                    <option value="column-reverse">Column Reverse</option>
+                </select>
+            </div>
+            <div class="select-control">
+                <label for="justifyContent"><b>Justify Content:</b></label>
+                <select id="justifyContent">
+                    <option value="flex-start">Flex Start</option>
+                    <option value="flex-end">Flex End</option>
+                    <option value="center">Center</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                </select>
+            </div>
+            <div class="select-control">
+                <label for="alignItems"><b>Align Items:</b></label>
+                <select id="alignItems">
+                    <option value="stretch">Stretch</option>
+                    <option value="flex-start">Flex Start</option>
+                    <option value="flex-end">Flex End</option>
+                    <option value="center">Center</option>
+                    <option value="baseline">Baseline</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="flex-container" id="flexContainer">
+            <div id="item-1" class="flex-item">1</div>
+            <div id="item-2" class="flex-item">2</div>
+            <div id="item-3" class="flex-item">3</div>
+        </div>
+
+        <div class="controls">
+            <div class="grow-control">
+                <label for="flexGrow"><b>Flex Grow:</b></label>
+                <div class="additional-controls">
+                    <div>
+                        <p>Box 1:</p>
+                        <input type="number" id="flex-grow-1" min="0" value="0">
+                    </div>
+                    <div>
+                        <p>Box 2:</p>
+                        <input type="number" id="flex-grow-2" min="0" value="0">
+                    </div>
+                    <div>
+                        <p>Box 3:</p>
+                        <input type="number" id="flex-grow-3" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+            <button id="resetFlex" class="reset-button">Reset</button>
+            <button id="growAll" class="reset-button">Grow All</button>
+        </div>
+    </div>
+
+    <script src="palomique_tsa8.js"></script>
+</body>
+</html>
