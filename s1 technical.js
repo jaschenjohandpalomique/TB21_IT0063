@@ -1,12 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("colorButton");
-    const container = document.querySelector(".resume-container");
-
-    const colors = ["#FFD700", "#87CEEB", "#90EE90", "#FF6347", "#DDA0DD"];
-    let index = 0;
-
-    button.addEventListener("click", function () {
-        container.style.backgroundColor = colors[index];
-        index = (index + 1) % colors.length;
-    });
+document.getElementById("colorButton").addEventListener("click", function() {
+    const resumeContainer = document.querySelector(".resume-container");
+    const colors = ["#f4f4f4", "#ffeb3b", "#8bc34a", "#2196f3", "#9c27b0"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    resumeContainer.style.backgroundColor = colors[randomIndex];
 });
+
