@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
     function openModal(event) {
         let img = event.target; 
         let card = img.closest(".restaurant-card");
